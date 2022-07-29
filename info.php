@@ -38,6 +38,9 @@ if (version_compare(GetIonCubeLoaderVersionForUddoktaPay(), '11.0.0') < 0) {
 if(!extension_loaded('pdo')){
 	die("PDO PHP extension missing! UddoktaPay requires PDO PHP extension to run, Please check and enable the extension.");
 }
+if(!extension_loaded('mysqli')){
+	die("Mysqli PHP extension missing! UddoktaPay requires Mysqli PHP extension to run, Please check and enable the extension.");
+}
 if(!extension_loaded('curl')){
 	die("cURL PHP extension missing! UddoktaPay requires cURL PHP extension to run, Please check and enable the extension.");
 }
