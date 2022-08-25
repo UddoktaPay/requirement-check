@@ -8,9 +8,9 @@ if (version_compare(PHP_VERSION, '7.4.0') < 0) {
 	die("Current PHP version is " . phpversion() . "! PHP version required for running UddoktaPay is PHP 7.4. Please check and upgrade your current PHP version.");
 }
 
-if (!function_exists('ioncube_loader_version')) {
- 	die("ionCube Loader function is missing! UddoktaPay requires ionCube Loader function to run, Please check and enable the extension or Contact with hosting provider.");
-}
+// if (!function_exists('ioncube_loader_version')) {
+//  	die("ionCube Loader function is missing! UddoktaPay requires ionCube Loader function to run, Please check and enable the extension or Contact with hosting provider.");
+// }
 
 function GetIonCubeLoaderVersionForUddoktaPay()
 {
@@ -31,9 +31,9 @@ function GetIonCubeLoaderVersionForUddoktaPay()
 	return 'Not Found!';
 }
 
-if (version_compare(GetIonCubeLoaderVersionForUddoktaPay(), '11.0.0') < 0) {
-	die("Current ionCube Loader version is " . GetIonCubeLoaderVersionForUddoktaPay() . "! minimum ionCube Loader version required for running UddoktaPay is 11.0.0 or higher. Please check and upgrade your current ionCube Loader version or Contact with hosting provider.");
-}
+// if (version_compare(GetIonCubeLoaderVersionForUddoktaPay(), '11.0.0') < 0) {
+// 	die("Current ionCube Loader version is " . GetIonCubeLoaderVersionForUddoktaPay() . "! minimum ionCube Loader version required for running UddoktaPay is 11.0.0 or higher. Please check and upgrade your current ionCube Loader version or Contact with hosting provider.");
+// }
 
 if(!extension_loaded('pdo')){
 	die("PDO PHP extension missing! UddoktaPay requires PDO PHP extension to run, Please check and enable the extension.");
