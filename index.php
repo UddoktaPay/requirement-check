@@ -96,7 +96,7 @@ if (!function_exists('ioncube_loader_version')) {
     $isError = 1;
  	echo '<li class="error"><strong>ionCube Loader</strong> function is missing! UddoktaPay requires ionCube Loader function to run, Please check and enable the extension or Contact with hosting provider.';
 } else {
-    if (version_compare(GetIonCubeLoaderVersionForUddoktaPay(), '11.0.0') < 0) {
+    if (version_compare(GetIonCubeLoaderVersionForUddoktaPay(), '12.0.0') < 0) {
         $isError = 1;
         echo '<li class="error">Current ionCube Loader version is <strong>' . GetIonCubeLoaderVersionForUddoktaPay() . '</strong>! minimum ionCube Loader version required for running UddoktaPay is 11.0.0 or higher. Please check and upgrade your current ionCube Loader version or Contact with hosting provider.';
     } else {
