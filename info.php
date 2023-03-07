@@ -31,7 +31,7 @@ function GetIonCubeLoaderVersionForUddoktaPay()
 	return 'Not Found!';
 }
 
-if (version_compare(GetIonCubeLoaderVersionForUddoktaPay(), '11.0.0') < 0) {
+if (version_compare(GetIonCubeLoaderVersionForUddoktaPay(), '12.0.0') < 0) {
 	die("Current ionCube Loader version is " . GetIonCubeLoaderVersionForUddoktaPay() . "! minimum ionCube Loader version required for running UddoktaPay is 11.0.0 or higher. Please check and upgrade your current ionCube Loader version or Contact with hosting provider.");
 }
 
